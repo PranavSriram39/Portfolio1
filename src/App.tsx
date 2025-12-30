@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Code2, Award, Briefcase, ChevronRight, ExternalLink, Wrench, Code, Terminal, Home } from 'lucide-react';
-import { projects, certifications, experience, skillCategories } from './data';
+import { projects, certifications, skillCategories } from './data';
 import { Card3D } from './components/Card3D';
 import { SkillCard } from './components/SkillCard';
 import { useSpring, animated } from '@react-spring/web';
@@ -129,7 +129,7 @@ function App() {
             {projects.map((project, index) => (
               <motion.a
                 key={index}
-                href="https://github.com/PranavSriran39"
+                href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.02 }}
@@ -189,7 +189,7 @@ function App() {
               </h3>
               <div className="space-y-2">
                 {skillCategories.languages.map((skill, index) => (
-                  <SkillCard key={index} skill={skill} index={index} />
+                  <SkillCard key={index} skill={skill.data} index={index} img={skill.image} link={skill.link} />
                 ))}
               </div>
             </Card3D>
@@ -202,7 +202,7 @@ function App() {
               </h3>
               <div className="space-y-2">
                 {skillCategories.technologies.map((skill, index) => (
-                  <SkillCard key={index} skill={skill} index={index} />
+                  <SkillCard key={index} skill={skill.data} index={index} img={skill.image} link={skill.link}/>
                 ))}
               </div>
             </Card3D>
@@ -215,7 +215,7 @@ function App() {
               </h3>
               <div className="space-y-2">
                 {skillCategories.tools.map((skill, index) => (
-                  <SkillCard key={index} skill={skill} index={index} />
+                  <SkillCard key={index} skill={skill.data} index={index}  img ={skill.image} link = {skill.link} />
                 ))}
               </div>
             </Card3D>
@@ -227,7 +227,7 @@ function App() {
               </h3>
               <div className="space-y-2">
                 {skillCategories.DataBases.map((skill, index) => (
-                  <SkillCard key={index} skill={skill} index={index} />
+                  <SkillCard key={index} skill={skill.data} index={index} img={skill.image} link={skill.link} />
                 ))}
               </div>
             </Card3D>
@@ -239,7 +239,7 @@ function App() {
               </h3>
               <div className="space-y-2">
                 {skillCategories.Frameworks.map((skill, index) => (
-                  <SkillCard key={index} skill={skill} index={index} />
+                  <SkillCard key={index} skill={skill.data} index={index}  img = {skill.image} link={skill.link}/>
                 ))}
               </div>
             </Card3D>
@@ -309,7 +309,7 @@ function App() {
       {/* Footer */}
       <footer className="bg-black/80 backdrop-blur-sm text-center py-6 border-t border-zinc-800">
         <p className="text-zinc-400">
-          © {new Date().getFullYear()} Maadesh Darisi. All rights reserved.
+          © {new Date().getFullYear()} Pranav Sriram. All rights reserved.
         </p>
       </footer>
     </div>

@@ -1,62 +1,198 @@
+import { i, link } from "framer-motion/client";
+import java from "../public/LOGOS/JAVA.png";
+import python from "../public/LOGOS/Python.jpeg";
+import c from "../public/LOGOS/C.png";
+import sql from "../public/LOGOS/Sql.png";
+import html from "../public/LOGOS/HTML.png";
+import css from "../public/LOGOS/css.png";
+import javascript from "../public/LOGOS/JAVAscript.png";
+import git from "../public/LOGOS/git.png";
+import github from "../public/LOGOS/github.png";
+import vscode from "../public/LOGOS/vs.jpeg";
+import postman from "../public/LOGOS/postman.png";
+import mongodb from "../public/LOGOS/mongodb.png";
+import mysql from "../public/LOGOS/mysql.png";
+import react from "../public/LOGOS/reactjs.png";
+import nextjs from "../public/LOGOS/nextjs.png";
+import express from "../public/LOGOS/expressjs.png";
+import nodejs from "../public/LOGOS/nodejs.jpeg";
+import firebase from "../public/LOGOS/firebase.png";
+import fastapi from "../public/LOGOS/fastapi.png";
 export const projects = [
   {
-    title: "WellnessFusion",
+    title: "Wellness-Fusion",
     description: "A front-end web application integrating AI-driven mental health support and personalized yoga recommendations",
     image: "/wellness-fusion.jpg",
     technologies: ["HTML", "CSS", "JavaScript", "NLP"],
     points: [
-      "Developed a full-stack web application integrating AI-driven mental health support for mental wellness and personalized yoga recommendations for physical wellness",
+      "Developed a front-end  web application integrating AI-driven mental health support for mental wellness and personalized yoga recommendations for physical wellness",
       "Built an interactive chatbot using NLP to provide real-time mental wellness assistance",
       "Integrated an interactive yoga module that suggests asanas based on age and fitness level",
       "Designed a responsive and user-friendly UI ensuring accessibility for users across different age groups"
-    ]
+    ],
+    link: "https://wellness-fusion.vercel.app/"
   },
   {
-    title: "Liver Cancer Classification",
-    description: "Neural network model for liver cancer classification based on medical data",
-    technologies: ["Neural Network", "Deep Learning", "Python"],
+    title: "Forest Wildfire Detection",
+    description: "Developed a deep learning model to detect forest wildfires from images as part of a Machine Vision course project. The system helps identify fire-prone areas early using image analysis techniques",
+    technologies: ["Neural Network", "Deep Learning", "Python","Computer Vision","FastAPI", "Data Visualization"],
     points: [
-      "Developed a neural network model using keras for liver cancer classification to predict the presence of liver cancer based on medical data.",
- "Trained the model with binary cross-entropy loss and Adam optimizer, achieving an accuracy of 71.35%.",
- "Optimized model performance through hyperparameter tuning and architectural improvements.",
- "Used Seaborn to visualize feature distributions and evaluation metrics for better interpretability."
-    ]
+      "Designed and trained a deep convolutional neural network (CNN) incorporating transfer learning (ResNet50 and EfficientNet architectures) to detect wildfire patterns in diverse forest images.",
+      "Implemented multi-stage image preprocessing and augmentation, including histogram equalization, denoising, rotation, scaling, and brightness normalization, to enhance model generalization.",
+      "Incorporated semantic segmentation using U-Net to highlight affected regions, enabling more precise localization of wildfires beyond simple classification.",
+       "Evaluated model performance using advanced metrics like IoU (Intersection over Union), F1-score, precision-recall curves, and confusion matrices to ensure high reliability in real-world scenarios"
+    ],
+    link: "https://forest-wildfire-detection.vercel.app/"
   },
   {
-    title: "",
-    description: "A front-end web application integrating AI-driven mental health support and personalized yoga recommendations",
-    image: "/wellness-fusion.jpg",
-    technologies: ["HTML", "CSS", "JavaScript", "NLP"],
+    title: "My_Music",
+    description: "My_Music is a gesture-controlled music web app that allows users to play and manage Spotify music hands-free using a React frontend and a FastAPI-based ML model for gesture recognition",
+    // image: "/wellness-fusion.jpg",
+    technologies: ["React.js", "MongoDB", "FastAPI", "Python"],
     points: [
-      "Developed a full-stack web application integrating AI-driven mental health support for mental wellness and personalized yoga recommendations for physical wellness",
-      "Built an interactive chatbot using NLP to provide real-time mental wellness assistance",
-      "Integrated an interactive yoga module that suggests asanas based on age and fitness level",
-      "Designed a responsive and user-friendly UI ensuring accessibility for users across different age groups"
-    ]
+      "Developed a music streaming web application controlled by hand gestures, allowing users to play and manage music without touching the device",
+      "Created a user-friendly frontend using React.js, integrated with the Spotify API to provide smooth and uninterrupted music playback",
+      "Built the backend using MongoDB Atlas and Mongoose, managing application data efficiently and supporting scalable user sessions",
+      "Connected a machine learning model through FastAPI, enabling real-time gesture detection and interaction between the ML system and the web application"
+    ],
+    link: "https://my-music.vercel.app/"
   },
   {
     title: "StudySphere",
     description: "StudySphere is a full-stack virtual group study platform designed for students, by students, enabling seamless collaboration between institutions, teachers, and learners through interactive learning, assessments, and discussion channels, including private and anonymous study groups.",
     // image: "/wellness-fusion.jpg",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    Framework:["React.js", "Next.js", "Express.js", "Flask"],
-    Database:["MongDB"],
+    technologies: ["Next.js","Socket","Node.js","Mongo.DB",],
     points: [
       "Designed and developed a full-stack virtual group study platform enabling real-time collaboration between students and teachers with organization-based access, dynamic channel creation (Discord-like), and role-based interactions",
       "Added real-time chat using WebSockets, allowing users to send messages and share files like PDFs, images, and documents using Cloudinary",
       "Created organization-based channels, including general channels for everyone and private groups for focused or anonymous study",
       "Developed assessments, leaderboards, and progress charts so students can track their learning and stay motivated"
-    ]
-  }
-  
+    ],
+    link:"https://study-sphere.vercel.app/"
+  },
+  // {
+  //   title: "Healthcare-Chatbot",
+  //   description: "Built an AI chatbot that can answer health-related questions using both a trained language model and documents like PDFs. Focused on generating accurate responses and evaluating model performance.",
+  //   // image: "/wellness-fusion.jpg",
+  //   technologies: ["Next.js","Socket","Node.js","Mongo.DB",],
+  //   points: [
+  //     "Built a chatbot using PyTorch: Created an AI chatbot that can understand and reply to health questions using a transformer model.",
+  //     "Tested different models: Tried out Hugging Face models like Falcon, Bloom, and Llama2 to see which one gives the best answers.",
+  //     "Used PDFs for answers: Implemented RAG so the chatbot can read PDF documents and answer questions from them.",
+  //     "Checked chatbot quality: Measured how good the chatbot’s answers were using evaluation metrics, achieving a BLEU score of 0.4."
+  //   ],
+  //   link:"https://github.com/PranavSriram39/Healthcare-Chatbot"
+  // }
 ];
 
 export const skillCategories = {
-  languages: ["Java", "Python", "C", "SQL"],
-  technologies: ["HTML", "CSS", "JavaScript"],
-  tools: ["VS Code", "GitHub", "Git"],
-  DataBases: ["MySQL", "MongoDB"],
-  Frameworks: ["React.js", "Next.js","express.js"]
+  languages: [
+    {
+      
+      data:"Java",
+      image:java,
+      link:"https://www.oracle.com/java/"
+    },
+    {
+      data:"Python",
+      image:python,
+      link:"https://www.python.org/"
+    },
+    {
+      data:"C",
+      image:c,
+      link:"https://en.cppreference.com/w/c"
+    },
+    {
+      data:"SQL",
+      image:sql,
+      link:"https://www.mysql.com/"
+    }
+  ],
+  technologies: [
+    {
+      data: "HTML",
+      image:html,
+      link:"https://developer.mozilla.org/en-US/docs/Web/HTML"
+    },
+    {
+      data: "CSS",
+      image:css,
+      link:"https://developer.mozilla.org/en-US/docs/Web/CSS"
+    },
+    {
+      data: "JavaScript",
+      image:javascript,
+      link:"https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+    }
+  ],
+  tools: [
+    {
+      data: "Git",
+      image:git,
+      link:"https://git-scm.com/"
+    },
+    {
+      data: "GitHub",
+      image:github,
+      link:"#"
+    },
+    {
+      data: "VS Code",
+      image:vscode,
+      link:"https://code.visualstudio.com/"
+    },
+    {
+      data: "Postman",
+      image:postman,
+      link:"https://www.postman.com/"
+    }
+    
+  ],
+  DataBases: [
+    {
+      data: "MongoDB",
+      image:mongodb,
+      link:"https://www.mongodb.com/"
+    },
+    {
+      data:"MySQL" ,
+      image:mysql,
+      link:"https://www.mysql.com/"
+    },
+    {
+      data:"Firebase",
+      image:firebase,
+      link:"https://firebase.google.com/"
+    }
+  ],
+  Frameworks: [
+    {
+      data: "React.js",
+      image:react,
+      link:"https://react.dev/"
+    },
+    {
+      data: "Next.js",
+      image:nextjs,
+      link:"https://nextjs.org/" 
+     },
+     {
+      data: "Express.js",
+      image:express,
+      link:"https://expressjs.com/"
+     },
+     {
+      data:"Node.js",
+      image:nodejs,
+      link:"https://nodejs.org/en/"
+     },
+     {
+      data: "FastAPI",
+      image:fastapi,
+      link:"https://fastapi.tiangolo.com/"
+     }
+  ]
 };
 
 export const certifications = [

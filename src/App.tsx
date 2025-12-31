@@ -92,7 +92,7 @@ function App() {
                 Explore my work <ChevronRight size={20} />
               </motion.button>
               <motion.a
-                href="https://drive.google.com/file/d/1pxawjvI04PwXqn3GRa4Rc-pc3Lqg4ZGG/view"
+                href="https://drive.google.com/file/d/1_FIVh1iaozRidDetKsoO_LDwuGJDgb7T/view?usp=sharing"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}

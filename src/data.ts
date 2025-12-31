@@ -220,7 +220,13 @@ export const certifications = [
     title: "Software Engineering Job Simulation",
     issuer: "J.P. Morgan Chase & Co",
     link: "https://drive.google.com/file/d/1GPzMi_bY_TozbKsYm773afIkyTWPdePJ/view?usp=sharing"
+  },
+  {
+    title: "Cybersecurity Essentials",
+    issuer: "CISCO",
+    link: ""
   }
+  
 ];
 
 // export const experience = [

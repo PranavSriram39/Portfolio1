@@ -45,22 +45,22 @@ export const projects = [
     link: "https://forest-wildfire-detection.vercel.app/"
   },
   {
-    title: "My_Music",
-    description: "My_Music is a gesture-controlled music web app that allows users to play and manage Spotify music hands-free using a React frontend and a FastAPI-based ML model for gesture recognition",
-    // image: "/wellness-fusion.jpg",
-    technologies: ["React.js", "MongoDB", "FastAPI", "Python"],
+    title: "Skincare-Recommendation-System",
+    description: "A web application that recommends skincare products based on user skin type and concerns using a machine learning model",
+    // image: "",
+    technologies: ["React.js", "OpenCv", "Flask", "Python"],
     points: [
-      "Developed a music streaming web application controlled by hand gestures, allowing users to play and manage music without touching the device",
-      "Created a user-friendly frontend using React.js, integrated with the Spotify API to provide smooth and uninterrupted music playback",
-      "Built the backend using MongoDB Atlas and Mongoose, managing application data efficiently and supporting scalable user sessions",
-      "Connected a machine learning model through FastAPI, enabling real-time gesture detection and interaction between the ML system and the web application"
+      "Uses Computer Vision and CNN models to automatically detect skin tone, skin type, and acne level from a selfie",
+      "Ensures proper lighting and single-face detection using face-api.js before capturing the image for better accuracy.",
+      "Applies transfer learning (EfficientNet-B0) to classify skin type and acne severity with good accuracy.",
+      "Built with React (frontend) and Flask (backend), providing smooth navigation from selfie capture to personalized recommendations."
     ],
-    link: "https://my-music.vercel.app/"
+    link: "https://github.com/PranavSriram39/Skincare-Recommendation-System/"
   },
   {
     title: "StudySphere",
     description: "StudySphere is a full-stack virtual group study platform designed for students, by students, enabling seamless collaboration between institutions, teachers, and learners through interactive learning, assessments, and discussion channels, including private and anonymous study groups.",
-    // image: "/wellness-fusion.jpg",
+    // image: "",
     technologies: ["Next.js","Socket","Node.js","Mongo.DB",],
     points: [
       "Designed and developed a full-stack virtual group study platform enabling real-time collaboration between students and teachers with organization-based access, dynamic channel creation (Discord-like), and role-based interactions",
@@ -68,21 +68,21 @@ export const projects = [
       "Created organization-based channels, including general channels for everyone and private groups for focused or anonymous study",
       "Developed assessments, leaderboards, and progress charts so students can track their learning and stay motivated"
     ],
-    link:"https://study-sphere.vercel.app/"
+    link:"https://studysphere39.vercel.app/"
   },
-  // {
-  //   title: "Healthcare-Chatbot",
-  //   description: "Built an AI chatbot that can answer health-related questions using both a trained language model and documents like PDFs. Focused on generating accurate responses and evaluating model performance.",
-  //   // image: "/wellness-fusion.jpg",
-  //   technologies: ["Next.js","Socket","Node.js","Mongo.DB",],
-  //   points: [
-  //     "Built a chatbot using PyTorch: Created an AI chatbot that can understand and reply to health questions using a transformer model.",
-  //     "Tested different models: Tried out Hugging Face models like Falcon, Bloom, and Llama2 to see which one gives the best answers.",
-  //     "Used PDFs for answers: Implemented RAG so the chatbot can read PDF documents and answer questions from them.",
-  //     "Checked chatbot quality: Measured how good the chatbot’s answers were using evaluation metrics, achieving a BLEU score of 0.4."
-  //   ],
-  //   link:"https://github.com/PranavSriram39/Healthcare-Chatbot"
-  // }
+    {
+     title: "BigOone",
+     description: "Built an AI chatbot that can answer health-related questions using both a trained language model and documents like PDFs. Focused on generating accurate responses and evaluating model performance.",
+     // image: "/wellness-fusion.jpg",
+     technologies: ["Next.js","Socket","Node.js","Mongo.DB",],
+     points: [
+       "Built a chatbot using PyTorch: Created an AI chatbot that can understand and reply to health questions using a transformer model.",
+       "Tested different models: Tried out Hugging Face models like Falcon, Bloom, and Llama2 to see which one gives the best answers.",
+       "Used PDFs for answers: Implemented RAG so the chatbot can read PDF documents and answer questions from them.",
+       "Checked chatbot quality: Measured how good the chatbot’s answers were using evaluation metrics, achieving a BLEU score of 0.4."
+     ],
+     link:"https://github.com/PranavSriram39/Healthcare-Chatbot"
+   }
 ];
 
 export const skillCategories = {
@@ -223,6 +223,11 @@ export const certifications = [
   },
   {
     title: "Cybersecurity Essentials",
+    issuer: "CISCO",
+    link: ""
+  },
+  {
+    title: "CCNA Introduction to Networks",
     issuer: "CISCO",
     link: ""
   }

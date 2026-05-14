@@ -35,6 +35,7 @@ export const projects = [
   {
     title: "Forest Wildfire Detection",
     description: "Developed a deep learning model to detect forest wildfires from images as part of a Machine Vision course project. The system helps identify fire-prone areas early using image analysis techniques",
+    // image: "",
     technologies: ["Neural Network", "Deep Learning", "Python","Computer Vision","FastAPI", "Data Visualization"],
     points: [
       "Designed and trained a deep convolutional neural network (CNN) incorporating transfer learning (ResNet50 and EfficientNet architectures) to detect wildfire patterns in diverse forest images.",
@@ -60,7 +61,7 @@ export const projects = [
   {
     title: "StudySphere",
     description: "StudySphere is a full-stack virtual group study platform designed for students, by students, enabling seamless collaboration between institutions, teachers, and learners through interactive learning, assessments, and discussion channels, including private and anonymous study groups.",
-    // image: "",
+    image: "/StudySphere.jpg",
     technologies: ["Next.js","Socket","Node.js","Mongo.DB",],
     points: [
       "Designed and developed a full-stack virtual group study platform enabling real-time collaboration between students and teachers with organization-based access, dynamic channel creation (Discord-like), and role-based interactions",
@@ -72,16 +73,41 @@ export const projects = [
   },
     {
      title: "BigOone",
-     description: "Built an AI chatbot that can answer health-related questions using both a trained language model and documents like PDFs. Focused on generating accurate responses and evaluating model performance.",
+     description: "",
      // image: "/wellness-fusion.jpg",
-     technologies: ["Next.js","Socket","Node.js","Mongo.DB",],
+     technologies: ["Next.js", "React.js", "Tailwind CSS", "Node.js"],
      points: [
-       "Built a chatbot using PyTorch: Created an AI chatbot that can understand and reply to health questions using a transformer model.",
-       "Tested different models: Tried out Hugging Face models like Falcon, Bloom, and Llama2 to see which one gives the best answers.",
-       "Used PDFs for answers: Implemented RAG so the chatbot can read PDF documents and answer questions from them.",
-       "Checked chatbot quality: Measured how good the chatbot’s answers were using evaluation metrics, achieving a BLEU score of 0.4."
+       "Built a modern web application using Next.js with App Router architecture for fast and scalable frontend development.",
+       "Implemented responsive UI components with real-time page updates and optimized client-side navigation.",
+       "Integrated optimized font loading and performance enhancements using Next.js built-in optimization features.",
+       "Structured the project with modular and maintainable components to support scalable feature development."
      ],
-     link:"https://github.com/PranavSriram39/Healthcare-Chatbot"
+     link:"https://github.com/PranavSriram39/BigOone"
+   },
+   {
+     title: "Neural-Route-Simulator",
+     description: "Developed a brain-inspired microservice routing simulator that compares traditional and adaptive neuromorphic routing using spike-timing behavior, real-time traffic visualization, and self-learning path optimization to improve latency and throughput in dynamic network environments.",
+     image: "/Neural-Route-Simulator.jpg",
+     technologies: ["JavaScript","React.js","Data Visualization"],
+     points: [
+       "Built a neuromorphic microservice routing simulator using React to compare adaptive STDP-based routing against traditional Round Robin load balancing strategies.",
+       "Implemented a custom Spike-Timing Dependent Plasticity (STDP) learning algorithm that dynamically reweighted service nodes based on real-time latency feedback and request performance.",
+       "Designed a real-time analytics dashboard with live latency/throughput charts, P95 latency tracking, and animated request-flow visualizations for side-by-side routing performance analysis."
+     ],
+     link:"https://neural-route-simulator.vercel.app/"
+   },
+    {
+     title: "HealthConnect",
+     description: "",
+     // image: "/HealthConnect.jpg",
+     technologies: ["ReactJS,",],
+     points: [
+       "Built a full-stack MERN healthcare platform with role-based access for Patients and Doctors — implementing JWT authentication, bcrypt password hashing, and a custom requireAuth middleware to protect all sensitive routes.",
+       "Engineered an end-to-end appointment system with full CRUD — patients filter doctors by specialty and book slots, doctors accept/reject requests, and status transitions (Pending → Accepted/Rejected) are persisted in MongoDB with timestamps.",
+       "Integrated 4 external APIs — NewsAPI for real-time health news, Nutritionix for NLP-based food nutrition lookup, and TomTom Nearby Search for geo-based discovery of hospitals, pharmacies, blood banks & emergency services within a 50km radius.",
+       "Architected the full backend in Express.js using a modular MVC structure (controllers, routes, Mongoose models) with field-level validation for email format, password strength, and uniqueness enforced at the model layer."
+     ],
+     link:"https://github.com/PranavSriram39/HealthConnect"
    }
 ];
 
@@ -224,14 +250,33 @@ export const certifications = [
   {
     title: "Cybersecurity Essentials",
     issuer: "CISCO",
-    link: ""
+    link: "https://drive.google.com/file/d/1qMU0bst_-MrlvhqBRsFmQif6YgqT3I9k/view?usp=drive_link"
   },
   {
     title: "CCNA Introduction to Networks",
     issuer: "CISCO",
-    link: ""
-  }
-  
+    link: "https://drive.google.com/file/d/1D9Yvfq-L-9xws9mWJ0_2-gtzGWinHqn5/view?usp=drive_link"
+  },
+  {
+    title: "CCNA Switching, Routing and Wireless Essentials",
+    issuer: "CISCO",
+    link: "https://drive.google.com/file/d/1sXmHvJ0eMxui8F1jWqCMfZCCkJpdE7eJ/view?usp=drive_link"
+  },
+  {
+    title: "CCNA Enterprise Networking, Security and Automation",
+    issuer: "CISCO",
+    link: "https://drive.google.com/file/d/1kPlfMCRQYEAHN1Y80hx9eGKuABP6H5hH/view?usp=drive_link"
+  },
+  {
+    title: "AI Skills",
+    issuer: "MICROSOFT & EY",
+    link: "https://drive.google.com/file/d/18XOU1m-rgeuMwAxTLi4YrntXjI8u0VEP/view?usp=sharing"
+  },
+  {
+    title: "Micro-Certification",
+    issuer: "SERVICENOW",
+    link: "https://drive.google.com/file/d/1z29T53hLPeB5D5fceJoE8xJTUBwvDihd/view?usp=sharing"
+  }  
 ];
 
 // export const experience = [

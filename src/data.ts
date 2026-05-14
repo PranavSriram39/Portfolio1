@@ -46,19 +46,6 @@ export const projects = [
     link: "https://forest-wildfire-detection.vercel.app/"
   },
   {
-    title: "Skincare-Recommendation-System",
-    description: "A web application that recommends skincare products based on user skin type and concerns using a machine learning model",
-    // image: "",
-    technologies: ["React.js", "OpenCv", "Flask", "Python"],
-    points: [
-      "Uses Computer Vision and CNN models to automatically detect skin tone, skin type, and acne level from a selfie",
-      "Ensures proper lighting and single-face detection using face-api.js before capturing the image for better accuracy.",
-      "Applies transfer learning (EfficientNet-B0) to classify skin type and acne severity with good accuracy.",
-      "Built with React (frontend) and Flask (backend), providing smooth navigation from selfie capture to personalized recommendations."
-    ],
-    link: "https://github.com/PranavSriram39/Skincare-Recommendation-System/"
-  },
-  {
     title: "StudySphere",
     description: "StudySphere is a full-stack virtual group study platform designed for students, by students, enabling seamless collaboration between institutions, teachers, and learners through interactive learning, assessments, and discussion channels, including private and anonymous study groups.",
     image: "/StudySphere.jpg",
@@ -71,19 +58,6 @@ export const projects = [
     ],
     link:"https://studysphere39.vercel.app/"
   },
-    {
-     title: "BigOone",
-     description: "",
-     // image: "/wellness-fusion.jpg",
-     technologies: ["Next.js", "React.js", "Tailwind CSS", "Node.js"],
-     points: [
-       "Built a modern web application using Next.js with App Router architecture for fast and scalable frontend development.",
-       "Implemented responsive UI components with real-time page updates and optimized client-side navigation.",
-       "Integrated optimized font loading and performance enhancements using Next.js built-in optimization features.",
-       "Structured the project with modular and maintainable components to support scalable feature development."
-     ],
-     link:"https://github.com/PranavSriram39/BigOone"
-   },
    {
      title: "Neural-Route-Simulator",
      description: "Developed a brain-inspired microservice routing simulator that compares traditional and adaptive neuromorphic routing using spike-timing behavior, real-time traffic visualization, and self-learning path optimization to improve latency and throughput in dynamic network environments.",
@@ -95,6 +69,34 @@ export const projects = [
        "Designed a real-time analytics dashboard with live latency/throughput charts, P95 latency tracking, and animated request-flow visualizations for side-by-side routing performance analysis."
      ],
      link:"https://neural-route-simulator.vercel.app/"
+   },
+
+   {
+    title: "Skincare-Recommendation-System",
+    description: "A web application that recommends skincare products based on user skin type and concerns using a machine learning model",
+    // image: "",
+    technologies: ["React.js", "OpenCv", "Flask", "Python"],
+    points: [
+      "Uses Computer Vision and CNN models to automatically detect skin tone, skin type, and acne level from a selfie",
+      "Ensures proper lighting and single-face detection using face-api.js before capturing the image for better accuracy.",
+      "Applies transfer learning (EfficientNet-B0) to classify skin type and acne severity with good accuracy.",
+      "Built with React (frontend) and Flask (backend), providing smooth navigation from selfie capture to personalized recommendations."
+    ],
+    link: "https://github.com/PranavSriram39/Skincare-Recommendation-System/"
+  },
+
+  {
+     title: "BigOone",
+     description: "",
+     // image: "/wellness-fusion.jpg",
+     technologies: ["Next.js", "React.js", "Tailwind CSS", "Node.js"],
+     points: [
+       "Built a modern web application using Next.js with App Router architecture for fast and scalable frontend development.",
+       "Implemented responsive UI components with real-time page updates and optimized client-side navigation.",
+       "Integrated optimized font loading and performance enhancements using Next.js built-in optimization features.",
+       "Structured the project with modular and maintainable components to support scalable feature development."
+     ],
+     link:"https://github.com/PranavSriram39/BigOone"
    },
     {
      title: "HealthConnect",

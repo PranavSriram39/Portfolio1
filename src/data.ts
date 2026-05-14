@@ -34,14 +34,14 @@ export const projects = [
   },
   {
     title: "Forest Wildfire Detection",
-    description: "Developed a deep learning model to detect forest wildfires from images as part of a Machine Vision course project. The system helps identify fire-prone areas early using image analysis techniques",
-    // image: "",
-    technologies: ["Neural Network", "Deep Learning", "Python","Computer Vision","FastAPI", "Data Visualization"],
+    description: "Developed an AI-powered Forest Wildfire Detection System using Deep Learning and Computer Vision to detect fire in real-time images and videos. Implemented VGG16/VGG19-based models with OpenCV for accurate wildfire classification and fire region detection.",
+    image: "/ForestWildfireDetection.jpg",
+    technologies: ["Python", "TensorFlow/Keras", "OpenCV", "NumPy", "Pandas", "Scikit-learn", "Matplotlib", "CNN (VGG16/VGG19)", "Jupyter Notebook"],
     points: [
-      "Designed and trained a deep convolutional neural network (CNN) incorporating transfer learning (ResNet50 and EfficientNet architectures) to detect wildfire patterns in diverse forest images.",
-      "Implemented multi-stage image preprocessing and augmentation, including histogram equalization, denoising, rotation, scaling, and brightness normalization, to enhance model generalization.",
-      "Incorporated semantic segmentation using U-Net to highlight affected regions, enabling more precise localization of wildfires beyond simple classification.",
-       "Evaluated model performance using advanced metrics like IoU (Intersection over Union), F1-score, precision-recall curves, and confusion matrices to ensure high reliability in real-world scenarios"
+      "Developed a Deep Learning-based Forest Wildfire Detection system using Python, TensorFlow, Keras, OpenCV, and CNN architectures for real-time fire detection.",
+      "Implemented and compared SVM, VGG16-ReduceNet, and VGG19-ReduceNet models on 39K+ wildfire images from the FLAME dataset.",
+      "Performed data preprocessing, normalization, augmentation, and spatial-temporal feature extraction to improve detection accuracy up to ~99%.",
+      "Built real-time fire localization and annotation using OpenCV contour detection and bounding-box visualization for images and videos."      
     ],
     link: "https://forest-wildfire-detection.vercel.app/"
   },
